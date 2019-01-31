@@ -1,0 +1,8 @@
+Create a new visualizer function (somehow) where it's a single equliateral triangel
+
+The fist edge is the low end of the spectrun,
+the second edge is the middle of the spectrum,
+the third edge is the highest,
+
+When the volume of one band increases, it's respective edge morphs to represent the volume increases
+

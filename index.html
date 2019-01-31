@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> 
+        1.0
+        </title>
+
+        <style>
+        
+            body{
+
+                background:blue;
+                overflow: hidden;
+                margin: 0px;
+                margin-bottom: 0px;
+
+            }
+
+            #header{
+
+                width: 1000px;
+                height: 110px;
+                opacity:0;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+
+            }
+
+            #header:hover{
+
+                opacity:1;
+
+            }
+
+            #timeSlider{
+
+                -webkit-appearance: none;
+                margin-top: 1%;
+                width: 100%;
+                height: 10px;
+                background: silver;
+                border-radius:7px;
+                outline: none;
+                opacity: 0.8;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+
+            }
+
+            #timeSlider:hover{
+
+                opacity: 1;
+
+            }
+
+            #timeSlider::-webkit-slider-thumb {
+
+                -webkit-appearance: none;
+                appearance: none;
+                border-radius:8px;
+                width: 15px;
+                height: 15px;
+                background:#250ddd;
+                cursor: pointer;
+
+            }
+
+        
+        </style>
+
+    </head>
+    
+    <body>
+
+        <center>
+            <div id= "header">
+
+                <button id="previousButton">Prev</button>
+                <button id="nextButton">Next</button>
+                <h3 id="songTitle" style="color:white"></h3>
+                <input type="range" min="0" max"100" id="timeSlider">
+
+            </div>
+        </center>
+
+       <!-- <br><br><br> -->
+        <canvas id="canvas"></canvas>
+        <audio id="audio1" src = "./audio/placeholder.mp3"></audio>
+
+    </body>
+
+    <script src="define.js">
+    </script>
+    <script src="settings.js">
+    </script>
+    <script src="visualize.js">
+    </script>
+
+</html>
